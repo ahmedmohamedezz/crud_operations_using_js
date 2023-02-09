@@ -1,0 +1,110 @@
+*{
+    /* reset defaults */
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: #ffffff;
+    color: black;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+    /* overflow: hidden; */
+}
+.crud .head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.crud input{
+    width: 100%;
+    margin: 5px 0;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #eee;
+    border-radius: 6px;
+    /* padding: 12px 6px; */
+    padding: 5px;
+}
+.crud input:focus{
+    /* how to remove the red underline ? */
+    font-weight: bold;
+}
+
+.crud input:focus,
+.crud input:hover{
+    transform: scale(1.01);
+}
+
+.crud .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.crud .price input,
+.crud .price small{
+    width: 18%;
+}
+
+.crud .price #total{
+    padding: 12px 6px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.crud .price #total::before{
+    content: "Total : ";
+}
+.inputs button{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: auto ? don't work */
+}
+button{    
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#del{
+    margin: 20px 0;
+}
+#deleteAll{
+    margin-top: px;
+    display: block;
+    width: 70%;
+    margin: auto;
+    /* display:none; */
+}
+.btn-search{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-search button{
+    width: 45%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 ;
+    border-spacing: 0;
+}
+
+table thead{
+    background-color: #eee;
+    text-transform: uppercase;   
+}
+th,td{
+    padding: 5px;
+}
